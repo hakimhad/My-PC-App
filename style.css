@@ -1,0 +1,88 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "montserrat";
+  background-color: indianred;
+}
+
+h3 {
+  width: auto;
+  text-align: center;
+  margin-top: 30px;
+}
+.form {
+  width: max-content;
+  text-align: center;
+  margin: 30px auto;
+}
+.input-keep:focus{
+  outline-style: none;
+}
+.input-keep {
+  border: 1px solid thistle;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  margin-right: 0;
+  padding: 5px;
+  background-color: thistle;
+}
+.btn-submit {
+    width: 70px;
+  padding: 5px;
+  color: thistle;
+  border: 1px solid thistle;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  margin-left: 0;
+  position: relative;
+  right: 5px;
+  cursor: pointer;
+}
+.btn-submit:hover{
+    color: indianred;
+    font-weight: 600;
+}
+.keeps-bloc {
+  width: max-content;
+  margin: 10px auto;
+}
+.keeps-list {
+  width: 250px;
+  
+  padding: 0%;
+}
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    background-color: thistle;
+    color: indianred;
+    list-style: none;
+    padding: 5px;
+    /* padding-left: 20px; */
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.done{
+    background-color: green;
+}
+.disappear{
+    display: none;
+}
+.check-btn{
+    background-color: green;
+    width : 20px;
+    height: 20px;
+    border-radius: 25%;
+}
+.del-btn{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+}
+
+.paragraphe-hidden{
+    visibility: hidden;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!----- modifier les polices---->
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <!----- icon google font---->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/36afeebe26.js" crossorigin="anonymous"></script>
+            <title>TITRE DU SITE</title>
+        </head>  
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <body>
+        <h3>My Todo-List</h3>
+        <div class="form">
+            <input type="text" class="input-keep" placeholder="Nouvelle tâche">
+            <button type="button" onclick="createNewKeep()" class="btn-submit" value="Ajouter">Ajouter </button>
+        </div>
+        <div class="keeps-bloc">
+            <ul class="keeps-list">
+
+            </ul>
+        </div>
+        <script src="app.js">
+            getValue();
+        </script>
+    </body>
+    <footer>
+    </footer>
+</html>
