@@ -34,46 +34,47 @@ function createNewKeep() {
     let li = document.createElement("li");
     let delBtn = document.createElement("button")
     let checkBtn = document.createElement("button")
-    if (input.value !== "") {
-        // p.classList.add("paragraphe-hidden");
-        p.style.display = "none";
-        
-        checkBtn.appendChild(document.createTextNode("V"));
-        li.appendChild(checkBtn);
-        checkBtn.classList.add("check-btn")
-        // checkBtn.addEventListener("click",checkItem())
+    // p.classList.add("paragraphe-hidden");
+    
+    p.style.display = "none";
+    
+    checkBtn.appendChild(document.createTextNode("V"));
+    li.appendChild(checkBtn);
+    checkBtn.classList.add("check-btn")
+    // checkBtn.addEventListener("click", checkItem())
 
-        li.appendChild(document.createTextNode(input.value));
-        ul.appendChild(li);
-        li.classList.add("list-item")
+    li.appendChild(document.createTextNode(input.value));
+    ul.appendChild(li);
+    li.classList.add("list-item")
 
-        delBtn.appendChild(document.createTextNode("X"));
-        li.appendChild(delBtn);
-        delBtn.classList.add("del-btn")
-        // delBtn.addEventListener("click",deleteItem())
+    delBtn.appendChild(document.createTextNode("X"));
+    li.appendChild(delBtn);
+    delBtn.classList.add("del-btn")
+    // delBtn.addEventListener("click", deleteItem())
 
-        input.value = "";
-        
-        storage();
-        input.focus();
-    } else {
-        alert("il faut ecrire qq chose!");
-        input.focus();
-    }
+    input.value = "";
+    
+    // function checkItem(){
+    //     li.classList.add("done")
+    // }
+
+
+    // function deleteItem(){
+    //     li.classList.add("disappear")
+    // }
+
+
+
+
+    storage();
+    input.focus();
+    
 }
 
 function storage() {
   window.localStorage.toDoList = ul.innerHTML;
 }
 
-function checkItem(){
-
-}
-
-
-function deleteItem(){
-
-}
 
 
 
