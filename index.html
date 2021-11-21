@@ -21,31 +21,67 @@
       src="https://kit.fontawesome.com/36afeebe26.js"
       crossorigin="anonymous"
     ></script>
-    <title>My Todo List</title>
-  </head>
+    <title>TITRE DU SITE</title>
+  </head>   
   <body>
-    <div id="main">
-      <h3>My Todo-List</h3>
-      <div class="content">
-        <form action="" required id="form">
-          <input
-            type="text"
-            id="input"
-            placeholder="Add a new task"
-            autofocus
-            required
-            autocomplete="off"
-            autocapitalize="on"
-          />
-          <!-- <button type="button" onclick="" id="btn-submit" value="Ajouter">Ajouter </button> -->
-        </form>
-        <ul id="list"></ul>
-      </div>
-    </div>
+    <main class="main">
+      <section class="title-ctn">
+        <h1 class="title">
+          MY PC APP
+        </h1>
+        <h4>BB 27000</h3>
+      </section>
+      <section class="main-ctn">
+        <div class="tabs-container">
+          <div class="partie-a-tab tab active" data-anim="1">Partie A</div>
+          <div class="partie-b-tab tab" data-anim="2">Partie B</div>
+          <div class="partie-c-tab tab" data-anim="3">Partie C</div>
+          <div class="partie-d-tab tab" data-anim="4">Partie D</div>
+          <div class="partie-e-tab tab" data-anim="5">Partie E</div>
+        </div>
+          
+        <div class="Partie-A-content content " data-anim="1">
+            <div><span class="tache">Presence sous catenaire</span><input type="checkbox"></input></div>
+            <div><span class="tache">Carnet de bord</span><input type="checkbox"></input></div>
+            <div><span class="tache">Plombage KVB</span><input type="checkbox"></input></div>
+            <div><span class="tache">Test VA</span><input type="checkbox"></input></div>
+            <div><span class="tache">Test KVB</span><input type="checkbox"></input></div>
+        </div>
+        <div class="Partie-B-content content hide-content" data-anim="2">
+            <div><span class="tache">Niveau d'huile</span><input type="checkbox"></input></div>
+            <div><span class="tache">Niveau d'huile</span><input type="checkbox"></input></div>
+            <div><span class="tache">Niveau d'huile</span><input type="checkbox"></input></div>
+            <div><span class="tache">Niveau d'huile</span><input type="checkbox"></input></div>
+            <div><span class="tache">Niveau d'huile</span><input type="checkbox"></input></div>
+        </div>
+        <div class="Partie-C-content content hide-content" data-anim="3">
+          <div><span class="tache">partie C</span><input type="checkbox"></input></div>
+          <div><span class="tache">partie C</span><input type="checkbox"></input></div>
+          <div><span class="tache">partie C</span><input type="checkbox"></input></div>
+          <div><span class="tache">partie C</span><input type="checkbox"></input></div>
+          <div><span class="tache">partie C</span><input type="checkbox"></input></div>
+        </div>
+        <div class="Partie-D-content content hide-content" data-anim="4">
+          <div><span class="tache">p artie DDDDDDce sous catenaire</span><input type="checkbox"></input></div>
+          <div><span class="tache">p artie DDDDDDde bord</span><input type="checkbox"></input></div>
+          <div><span class="tache">p artie DDDDDDe KVB</span><input type="checkbox"></input></div>
+          <div><span class="tache">p artie DDDDDD</span><input type="checkbox"></input></div>
+          <div><span class="tache">p artie DDDDDDB</span><input type="checkbox"></input></div>
+        </div>  
+        <div class="Partie-E-content content hide-content" data-anim="5">
+          <div><span class="tache">EEEEEEEnaire</span><input type="checkbox"></input></div>
+          <div><span class="tache">EEEEEEEde bord</span><input type="checkbox"></input></div>
+          <div><span class="tache">EEEEEEEe KVB</span><input type="checkbox"></input></div>
+          <div><span class="tache">EEEEEEE</span><input type="checkbox"></input></div>
+          <div><span class="tache">EEEEEEEB</span><input type="checkbox"></input></div>
+        </div>  
+        <!-- <div class="foot-nav">
+          <span>Precedent</span>
+          <span>Suivant</span>
+        </div> -->
+      </section>
+    </main>
+    <script src="app.js"></script>
   </body>
-
   <footer></footer>
-  <script src="app.js">
-    getValues()
-  </script>
 </html>
